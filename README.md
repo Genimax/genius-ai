@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CyberChat 2077
 
-## Getting Started
+Это интерактивный чат-интерфейс в стиле киберпанк, построенный на [Next.js](https://nextjs.org) с использованием API X.AI (Grok).
 
-First, run the development server:
+## Особенности
+
+-   🤖 Интеграция с моделью Grok от X.AI
+-   🎨 Стильный киберпанк-интерфейс
+-   💬 Потоковая передача ответов в реальном времени
+-   ✨ Поддержка Markdown в сообщениях
+-   📱 Адаптивный дизайн
+-   🌙 Оптимизированные шрифты Geist
+
+## Начало работы
+
+1. Клонируйте репозиторий
+2. Установите зависимости:
+
+```bash
+npm install
+# или
+yarn install
+# или
+pnpm install
+```
+
+3. Создайте файл `.env` и добавьте ваш API ключ X.AI и системную задачу для бота:
+
+```bash
+X_AI_API_KEY=ваш_ключ_здесь
+NEXT_PUBLIC_TASK=Системная задача для бота
+```
+
+4. Запустите сервер разработки:
 
 ```bash
 npm run dev
-# or
+# или
 yarn dev
-# or
+# или
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Откройте [http://localhost:3000](http://localhost:3000) в браузере
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Технологии
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   Next.js 15.0
+-   React 19
+-   Tailwind CSS
+-   Radix UI
+-   React Markdown
+-   Lucide Icons
 
-## Learn More
+## Структура проекта
 
-To learn more about Next.js, take a look at the following resources:
+-   `/src/app/page.js` - Основной компонент чата
+-   `/src/app/api/completion` - API-маршрут для интеграции с X.AI
+-   `/src/components/ui` - Переиспользуемые UI компоненты
+-   `/src/lib` - Утилиты и вспомогательные функции
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Развертывание
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Проект можно развернуть на [Vercel Platform](https://vercel.com/new).
 
-## Deploy on Vercel
+1. Создайте аккаунт на Vercel
+2. Импортируйте проект из Git
+3. Настройте переменные окружения
+4. Разверните
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Лицензия
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
