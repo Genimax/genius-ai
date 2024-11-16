@@ -19,7 +19,7 @@ export async function POST(req) {
       messages,
     };
 
-    const response = await fetch("https://api.x.ai/v2/chat/completions", {
+    const response = await fetch("https://api.x.ai/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
